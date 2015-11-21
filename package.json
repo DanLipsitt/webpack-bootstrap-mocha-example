@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register client/test/",
+    "prebuild": "cp client/index.html build",
     "build": "webpack",
+    "predev": "npm run prebuild",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "author": "Dan Lipsitt",
@@ -27,7 +29,6 @@
     "exports-loader": "^0.6.2",
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.4",
-    "html-webpack-plugin": "^1.6.2",
     "imports-loader": "^0.6.5",
     "less": "^2.5.3",
     "less-loader": "^2.2.1",
