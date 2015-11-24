@@ -3,6 +3,7 @@ var _ = require('lodash');
 
 module.exports = _.extend(config, {
   target: 'node',
+  devtool: '#eval',
   entry: [
     './client/test/app.jsx',
   ],
