@@ -38,5 +38,13 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanLipsitt/webpack-bootstrap-mocha-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DanLipsitt/webpack-bootstrap-mocha-example/issues"
+  },
+  "homepage": "https://github.com/DanLipsitt/webpack-bootstrap-mocha-example#readme"
 }
