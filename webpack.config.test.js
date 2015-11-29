@@ -5,6 +5,7 @@ module.exports = _.extend(config, {
   target: 'node',
   devtool: '#eval',
   entry: [
+    'bootstrap-webpack!./bootstrap.config.js',
     './client/test/app.jsx',
   ],
   output: {
