@@ -1,8 +1,10 @@
-import {expect} from 'chai';
-import {App} from '../components/App';
+import chai from 'chai';
+should = chai.should();
+import App from '../components/App';
 
 describe('App', function() {
   it('should render', function() {
-    expect();
+    let x = 1;
+    x.should.equal(1);
   });
 });
