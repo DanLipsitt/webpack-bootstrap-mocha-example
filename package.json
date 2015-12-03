@@ -5,8 +5,9 @@
   "description": "Demo to explore how to get react-bootstrap working with webpack and mocha.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register /tmp/bootstrapTestBundle.js",
-    "pretest": "webpack --config webpack.config.test.js",
+    "test": "mocha --compilers js:babel/register client/test/*",
+    "test:webpack": "mocha --compilers js:babel/register /tmp/bootstrapTestBundle.js",
+    "pretest:webpack": "webpack --config webpack.config.test.js",
     "prebuild": "cp client/index.html build",
     "build": "webpack",
     "predev": "npm run prebuild",
